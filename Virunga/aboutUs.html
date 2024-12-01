@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    color: white;
+
+}
+body{
+    font-family:"Poppins", sans-serif; 
+    background: rgb(20, 20, 20);
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 70px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #0c0a0a;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+.left-header p{
+text-transform: capitalize;
+font-size: px;
+letter-spacing: 1px;
+font-weight: 600;
+position: absolute;
+left: 16px;
+top:24px;
+color: white;
+
+
+
+
+}
+.left-header p{
+   background-color:transparent;
+    font-size: 20px;
+}
+.right-header{
+ 
+text-transform: capitalize;
+width: 80%;
+letter-spacing: 1px;
+font-weight: 600;
+background-color:transparent;
+word-spacing: 20px;
+order: 2;
+
+}
+.right-header a{
+    word-spacing: 20px;
+    padding: 15px;
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+    background-color: transparent;
+    color: #4b4949;
+}
+.button1{
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+   background-color: transparent;
+   color: rgb(6, 185, 185);
+   border:2px solid rgb(6, 185, 185);
+   float: right;
+   position: absolute;
+   left: 1100px;
+   font-size: 15px;
+}
+.right-header .Home{
+    color: white;
+}
+
+
+
+
+.first, .second, .third{
+    padding: 20px;
+    background-color:transparent;
+}
+.first p, .second p, .third p{
+    background: transparent;
+}
+.paragraph{
+    text-align: center;
+    background-color: transparent;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95vh;
+}
+
+.section-box{
+     background-image:  url('background.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80vh;
+     width: 85%;
+     border-radius: 30px;
+     border:none;
+     overflow: hidden;
+     z-index: -1;
+}
+.bottom{
+    border-radius: 30px;
+    background-color: #1d1c1c;
+    display: flex;
+    height: 120px;
+    width: 700px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 170px;
+    left: 200px;
+    color: white;
+}
+
+.left-grid{
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0;
+    align-items: center;
+    position: relative;
+    top: 110px;
+    color: white;
+
+}
+.button{
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100px;
+    height:40px ;
+    font-size: 15px;
+   background-color: transparent;
+   color: rgb(6, 185, 185);
+   border:2px solid  rgb(6, 185, 185);
+   margin-top: 14px;
+}
+.input{
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid rgb(6, 185, 185);
+    background-color: transparent;
+    margin-top: 9px;
+}
+.input[type="date"]{
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid rgb(6, 185, 185);
+    background-color: transparent;
+    margin-top: 9px;
+    text-align: center;
+}
+.input::placeholder,input[type="date"]{
+    float: left;
+    left: 7px;
+    position: relative;
+    font-size: 15px;
+    color: white;
+    margin-left: 8px;
+    
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    margin-left: 4px;
+}
+
+
+input[type="date"]{
+    font-size: 15px;
+    
+    color: white;
+    margin-left: 8px;
+}
+.section-sub{
+    font-size: 20px;
+    color: rgb(17, 15, 15);
+    font-family:"Poppins", sans-serif; 
+}
+.section-title{
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+    font-family:"Poppins", sans-serif; 
+}
+.tour{
+    letter-spacing: 0;
+    font-size: 10px;
+    margin-top: 1px;
+    font-family:"Poppins", sans-serif;
+   
+}
+.box{
+    
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    padding: 20px;
+   
+}
+.right-empty{
+    display: block;
+    float: left;
+    width: 30%;
+    height: 200px;
+    background: white;
+    margin-left: 180px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: inset 0 0 3px black;
+    
+   
+}
+.left-box{
+    margin-left: 990px;
+    width: 30%;
+    height: 200px;
+    display: block;
+    margin-left: 160px;
+    padding: 15px;
+    
+}
+.left-box h5{
+    font-size: 10px;
+    color: rgb(6, 185, 185);
+}
+.left-box p{
+    font-size: 8px;
+    color: #918d8d;
+    margin-top: 15px;
+}
+.left-box button{
+    
+    border-radius: 20px;
+    width: 90px;
+    height:30px ;
+    font-size: 12px;
+   background-color: transparent;
+   color: rgb(6, 185, 185);
+   border:2px solid  rgb(6, 185, 185);
+   margin-top: 24px;
+}
+.left-box h5, .left-box p{
+   margin-top: 19px;
+    
+}
+.Destination{
+    text-align: center;
+    font-size: 29px;
+    padding: 10px;;
+}
+.Destination h6{
+    font-size: 10px;
+    color: rgb(6, 185, 185);
+}
+.full-box{
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 240px;
+    
+    
+}
+.hom .full-box .first-box{
+    
+    border-radius: 25px;
+    width: 190px;
+    height: 300px;
+    margin: 30px;
+    background-color:rgb(48, 44, 44);
+   
+}
+.home{
+    justify-content: center;
+    display: flex;
+}
+.image{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: url(Ballons.jpg);
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.noimage{
+margin: 19px;
+
+}
+.noimage h5{
+    font-size: 15px;
+}
+.noimage h5 + p{
+    font-size: 10px;
+    margin-top: 5px;
+}
+.noimage  .Lorem{
+   
+    justify-content: center;
+    color: rgb(6, 185, 185);
+}
+.noimage .Lorem span{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.part1{
+    margin-top: 95px;
+    margin-bottom: 45px;
+}
+.hom .full-box2{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+height: 270px;
+
+}
+ .full-box2 .second-box{
+margin: 30px 30px;
+height: 220px;
+width: 270px;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #2e2929;
+border-radius: 20px;
+
+}
+ .world i{
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 92px;
+    color: rgb(6, 185, 185);
+}
+.full-box2 p{
+
+    margin-top: 5px;
+font-size: 10px;
+color: #a19e9e;
+}
+.part2{
+    margin-top: 45px;
+}
+.home1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.full-box3{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+
+}
+.third-box{
+    margin: 30px;
+    background-color:#2c2828 ;
+    border-radius: 25px;
+    width: 270px;
+    height: 370px;
+}
+.third-box h5{
+    font-size: 20px;
+}
+.third-box .desc{
+    font-size: 11px;
+    color: #9b9595;
+}
+.icons1{
+    display: flex;
+    
+}
+.icons1 i{
+    color: rgb(6, 185, 185);
+}
+.icons1 label{
+    font-size: 12px;
+    margin-left: 3px;
+}
+.right-icon{
+    float: left;
+}
+.left-icon{
+    display: block;
+    float: left;
+    width: 50px;
+    margin-left: auto;
+
+}
+.middle{
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    background: url('Enjoying.jpg');
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+   opacity: 0.4;
+   
+    
+
+}
+
+
+.middle .h2{
+  
+    margin-top: 20px;
+    color: #0f0909;
+}
+.middle .p{
+    font-weight: 600;
+    color:rgb(7, 0, 0);
+    margin-top: 20px;
+    font-size: 14px;
+   
+}
+.difficult{
+  
+    padding-top: 100px;
+    font-size: 13px;
+    color: rgb(4, 245, 245);
+    
+}
+.middle button{
+  
+    margin-top: 20px;
+}
+.about{
+height: 400px;
+    
+   
+    
+    
+    background-color: black;
+}
+.about-in{
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    display: flex;
+    background-color: black;
+}
+.about-in h3{
+    font-size: 20px;
+}
+.quick{
+    width: 300px;
+}
+.quick ul li,.quick p{
+    list-style: none;
+    font-size: 12px;
+    margin-top: 18px;
+}
+.quic{
+    position: relative;
+    top: -70px;
+    font-size: 12px;
+}
+.quic p{
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.quic input{
+    width: 160px;
+    border-right: none;
+    height: 40px;width: 200px;
+    background-color: transparent;
+    border-radius: 50px;
+    border-right: none;
+    
+}
+.about-in .Travel{
+    position: relative;
+    top: -54px;
+}
+.about-in .Our{
+    position:relative;
+    top:  -20px;
+}
+
+.quic {
+            position: relative;
+            top: -70px;
+            font-size: 12px;
+        }
+
+        .quic p {
+            font-size: 11px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .wise {
+            position: relative;
+            width: 300px; /* Adjust the width as needed */
+        }
+
+        .wise input[type="email"] {
+            width: 70%;
+            padding: 10px;
+            padding-right: 100px; /* Leave space for the button */
+            border: 2px solid rgb(6, 185, 185);
+            border-radius: 50px; /* Full rounded corners */
+            border-right: none; /* Remove right border */
+            height: 17px;
+            background-color: transparent;
+        }
+
+        .wise button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            left:240px;
+            right: inherit;
+            justify-content: center;
+            height: 100%;
+            border: 2px solid rgb(6, 185, 185);
+            border-left: none; 
+            background-color: #0f680c;
+            color: white;
+            padding: 0 20px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        .wise button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .social-media-icons {
+            font-size: 30px;
+            display: flex;
+            color: rgb(6, 185, 185);
+            
+        }
+        .social-media-icons a i{
+            margin-right: 20px;
+            color: rgb(6, 185, 185);
+        }
+.ego{
+    background: url(swiming\ pool.jpg);
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+
+</head>
+<body>
+    <header class="header">
+        <div class="left-header"><p>TourLo</p></div>
+        <div class="right-header">
+        <a href="#">Login</a>
+        <a href="#">About</a>
+        <a href="#">contact</a>
+        <a href="#">Register</a>
+        <a href="#" class="Home">Home</a>
+        <button class="button1">Book now</button>
+       </div>
+    </header>
+    
+        <section id="hero">
+            <div class="section-box">
+                <div class="content-grid">
+                         <div class="left-grid">
+                            <h3 class="section-sub">Follow us </h3>
+                            <h2 class="section-title">To the TourLo</h2>
+                           <p class="tour"> Welcome to TourLo! A captivating land of breathing landscapes, rich history, and vibrant culture. Embark on an forgattable journey <br><br>
+                            and immerse yourself in an array of unforgattable experiences. </p>
+                           
+                           <button class="button">Book Now</button>
+                      
+                         </div>
+                         <div class="bottom">
+                         <div class="first">
+                            <P>Where to?</P>
+                             <input class="input" type="text" placeholder="Place Name">
+                            </div><br>
+                        
+                         <div class="second">
+                          <p>When</p>
+                            <input class="input" type="date" id="date" name="date">
+                         </div><br>
+                        
+                         <div class="third">
+                            <p>How many</p>
+                             <input class="input" type="text" id="" name="how many" placeholder="No of tourists">
+                         </div>
+                         <button class="button">Book now</button>
+                    </div>
+                </div>
+            </div>
+           
+       </section>
+
+<div class="box">
+    <div class="right-empty"></div>
+<div class="left-box">
+    <h5>Why Choose Us?</h5>
+<h3>Nature's Majesty Awaits You</h4>
+<p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.Veniam Quis Enim Asperiores <br>
+Repellat Nulla Voluptatum Hic Cum Doloribus Quibsdum. Lorem Ipsum Dolor Sit  <br>
+Amet Consectetur Adipisicing Elit. Veniam Quis Asperiores Repellat Nulla Voluptatum Hic Alias Cum Doloribus Quibsdum.</p>
+ 
+<button>Read More</button>
+</div>
+</div>
+<div class="Destination">
+    <h6>Our Destination</h6>
+    <h5>Make Yours Destination </h5>
+</div>
+<div class="hom">
+    <div class="full-box">
+        <div class="first-box">
+             <div class="image"></div>
+            <div class="noimage">
+                <h5>Tours And Travels</h5>
+            <p >Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+            <p class="Lorem">Read More <span>></span> </p>
+            </div>
+        </div>
+        
+        <div class="first-box">
+            <div class="image"></div>
+           <div class="noimage">
+               <h5>Tours And Travels</h5>
+           <p>Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+           <p class="Lorem">Read More <span>></span> </p>
+           </div>
+       </div>
+
+       <div class="first-box">
+        <div class="image"></div>
+       <div class="noimage">
+           <h5>Tours And Travels</h5>
+       <p>Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+       <p class="Lorem">Read More <span>></span> </p>
+       </div>
+   </div>
+        
+        <div class="first-box">
+             <div class="image"></div>
+            <div class="noimage">
+                <h5>Tours And Travels</h5>
+            <p>Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+            <p class="Lorem">Read More <span>></span> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hom">
+    <div class="full-box">
+        <div class="first-box">
+             <div class="image"></div>
+            <div class="noimage">
+                <h5>Tours And Travels</h5>
+            <p >Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+            <p class="Lorem">Read More <span>></span> </p>
+            </div>
+        </div>
+        
+        <div class="first-box">
+            <div class="image"></div>
+           <div class="noimage">
+               <h5>Tours And Travels</h5>
+           <p>Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+           <p class="Lorem">Read More <span>></span> </p>
+           </div>
+       </div>
+
+       <div class="first-box">
+        <div class="image"></div>
+       <div class="noimage">
+           <h5>Tours And Travels</h5>
+       <p>Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+       <p class="Lorem">Read More <span>></span> </p>
+       </div>
+   </div>
+        
+        <div class="first-box">
+             <div class="image"></div>
+            <div class="noimage">
+                <h5>Tours And Travels</h5>
+            <p>Lorem Ipsum Dolar Sit Amet <br> Consectetur Adipisicing Elit. <br>Adipisci, Dolor <br></p>
+            <p class="Lorem">Read More <span>></span> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  class="Destination part1">
+    <h6>Our Servics</h6>
+<h3>Countless Experiences</h3>
+</div>
+
+<div class="hom">
+    <div class="full-box2">
+        <div class="second-box">
+             <div class="world"><i class="fas fa-globe icon"></i> </div>
+            <div class="noimage">
+               
+     <h4>WordWide</h4>
+     <p>Lorem Ipsum Dolor Sit Amet <br> Consectetur, Adipisicing Elit. Nulla, Quial</p>
+            </div>
+        </div>
+        
+        <div class="second-box">
+            <div class="world"><i class="fas fa-person-hiking icon"></i></div>
+           <div class="noimage">
+            <h4>Adventures</h4>
+            <p>Lorem Ipsum Dolor Sit Amet <br> Consectetur,Adipisicing Nulla,Quia!</p>
+           </div>
+       </div>
+
+       <div class="second-box">
+        <div class="world"><i class="fas fa-utensils icon"></i></div>
+       <div class="noimage">
+        <h4>Foods and Drinks</h4>
+        <p>Lorem Ipsum Dolor Sit Amet <br> Consectetur,Adipisicing Nulla,Quia!</p>
+   </div>
+        
+       
+    </div>
+</div>
+
+<div class="hom">
+    <div class="full-box2">
+        <div class="second-box">
+             <div class="world"><i class="fas fa-hotel icon"></i></div>
+            <div class="noimage">
+               
+     <h4>Affordable Hotels</h4>
+     <p>Lorem Ipsum Dolor Sit Amet <br> Consectetur, Adipisicing Elit. Nulla, Quial</p>
+            </div>
+        </div>
+        
+        <div class="second-box">
+            <div class="world"> <i class="fas fa-clapperboard icon"></i></div>
+           <div class="noimage">
+            <h4>Affordable Price</h4>
+            <p>Lorem Ipsum Dolor Sit Amet <br> Consectetur,Adipisicing Nulla,Quia!</p>
+           </div>
+       </div>
+
+       <div class="second-box">
+        <div class="world"><i class="fas fa-headphones-alt icon headset"></i></div>
+       <div class="noimage">
+        <h4>7/24 Services</h4>
+        <p>Lorem Ipsum Dolor Sit Amet <br> Consectetur,Adipisicing Nulla,Quia!</p>
+   </div>
+    </div>
+</div>
+<div class="Destination part2">
+<h6>Blogs and Posts</h6>
+<h5>The Untold Story</h5>
+</div>
+
+<div class="home1">
+    <div class="full-box3">
+        <div class="third-box">
+            <div class="image ego"></div>
+            <div class="noimage">
+                <h5>Life Is A Journey Not <br> A destination</h5>
+                <p class="desc">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Commodi, Omnis.Lorem Ipsum Dolor Sit Amet, Consectetur
+                </p>
+                <div class="icons1">
+                   
+                    <div class="right-icon">
+                        <i class="fas fa-stopwatch icon stopwatch"></i><label>20 May 2023</label>
+                    </div>
+                    <div class="left-icon">
+                        <i class="fas fa-user icon user"></i><label >User</label>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="third-box">
+            <div class="image ego"></div>
+           <div class="noimage">
+            <h5>Life Is A Journey Not <br> A destination</h5>
+            <p class="desc">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Commodi, Omnis.Lorem Ipsum Dolor Sit Amet, Consectetur
+            </p>
+            <div class="icons1">
+                   
+                <div class="right-icon">
+                    <i class="fas fa-stopwatch icon stopwatch"></i><label>20 May 2023</label>
+                </div>
+                <div class="left-icon">
+                    <i class="fas fa-user icon user"></i><label >User</label>
+               </div>
+            </div>
+           </div>
+       </div>
+
+       <div class="third-box">
+
+        <div class="image ego"></div>
+       <div class="noimage">
+        <h5>Life Is A Journey Not <br> A destination</h5>
+        <p class="desc">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Commodi, Omnis.Lorem Ipsum Dolor Sit Amet, Consectetur
+        </p>
+        <div class="icons1">
+                   
+            <div class="right-icon">
+                <i class="fas fa-stopwatch icon stopwatch"></i><label>20 May 2023</label>
+            </div>
+            <div class="left-icon">
+                <i class="fas fa-user icon user"></i><label >User</label>
+           </div>
+        </div>
+       </div>
+   </div>
+   
+        
+    </div>
+</div>
+
+<div class="middle">
+    <p class="difficult">Start Your Adventure</p>
+    <h2 class="h2">Let's Explore This World</h2>
+    <p class="p">Welcome to TourLo! A captivating land of breathtaking landscapes, rich history, and vibrant culture. Emark on an unforgattable journey <br>and immerse yourself in an array of unforgattable experiences</p>
+    <button class="button">Book Now</button>
+</div>
+
+
+
+       <div class="about">  
+       <div class="about-in">
+        <div class="quick  Travel">
+            <h3 class="h3">Travel</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur <br>
+                Adipisicing Elit.</p>
+                <div class="social-media-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        </div>
+       
+
+        <div class="quick">
+            <h3 class="h3">Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Register</li>
+                <li>Login</li>
+            </ul>
+           
+        </div>
+        <div class="quick Our">
+            <h3 class="h3 ">Our address</h3>
+            <p><i class="fas fa-map-marker-alt icon"></i> Masaka,Kicukiro-400104</p>
+            <p><i class="fas fa-phone icon"></i> 729 593 101</p>
+            <p><i class="fas fa-envelope icon"></i>giselemigisha53@gmail.com</p>
+            <p><i class="fas fa-stopwatch icon"></i> 8:00 am - 5:00 pm</p>
+        </div>
+
+        <div class="quic">
+            <h3 class="h3">Newsletter</h3>
+            <p>Subscribe for the latest updates</p>
+            <label for="email"></label>
+            <div class="wise">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+       </div>
+      
+       </div>
+
+        <footer>Created By Gisel | 2023 </footer>
+
+</body>
+</html>
